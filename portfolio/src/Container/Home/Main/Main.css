@@ -1,0 +1,132 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    
+}
+.main-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+.details-name{
+    font-size: 24px;
+    font-family: "Josefin Sans";
+    font-weight: 200;
+}
+.role-details{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+.role-details h1{
+    font-size: 40px;
+    font-family: "Special Elite" !important;
+    font-weight: 300;
+}
+.main-text{
+    color:antiquewhite;
+}
+.highlighted-text{
+    color:burlywood;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.role-details-sub{
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+  }
+  .picture-background {
+    height: 92%;
+    width: 92%;
+    border-radius: 50%;
+    background-image: url("../../../assets/Home/profilemain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .picture-background:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+  }
+  .col .col-icon i {
+    color: white;
+    padding: 8px;
+    padding-left: 0px;
+  }
+  .col .col-icon i:hover {
+    transform: scale(1.5);
+  }
+  
+
+  @media only screen and (max-width: 1110px) {
+    .profile-picture {
+      margin: 0 0px 0 80px;
+    }
+    .details-name {
+      font-size: 20px;
+    }
+    .role-details .main-text {
+      font: 12px;
+    }
+    .main-options .btn {
+      width: 120px;
+      padding: 11px 0;
+      z-index: 700;
+    }
+  }
+  @media only screen and (max-width: 910px) {
+    .profile-picture {
+      margin: 0 0 0 4px;
+      height: 320px;
+      width: 320px;
+    }
+  }
+  @media only screen and (max-width: 810px) {
+    .profile-picture {
+      margin: 0 !important;
+    }
+    .main-parent {
+      flex-direction: column-reverse;
+      margin: 40px 0 0 0;
+    }
+    .main-options {
+      display: flex;
+      justify-content: space-between;
+    }
+    .main-details {
+      margin: 25px 0 0;
+    }
+    .main-options .highlighted-btn {
+      margin: 0 !important;
+    }
+    .details-name,
+    .role-details {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .profile-picture {
+      height: 275px;
+      width: 275px;
+      margin-top: -90px;
+    }
+    .proflie-details {
+      width: 95%;
+    }
+  }

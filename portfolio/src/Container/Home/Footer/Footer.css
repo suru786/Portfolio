@@ -1,0 +1,22 @@
+.Footer-container{
+    height:18%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.Footer-parent{
+    height: 100%;
+    width: 100%;
+    max-width: 2000px;
+}
+.Footer-parent img{
+    max-width: 100%;
+    height: 130px;
+}
+@media only screen and (max-width:1110px){
+    .Footer-parent{
+        display: flex;
+        align-items: flex-end;
+    }
+}

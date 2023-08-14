@@ -1,9 +1,10 @@
 import React from "react";
-import Link from "./Container/Home/Link";
+import Container from "./Container/Container";
+import './index.css';
 function App() {
   return (
     <div className="App">
-       <Link/>
+       <Container/>
     </div>
   );
 }
