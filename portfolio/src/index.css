@@ -51,31 +51,31 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .primary-btn {
-  color:#D2B48C;
+  color:#EDE2D9;
   font-size: 15px;
-  background-color: #80461B;
+  background-color:  #8C6C61;
   font-weight: bold;
 }
 .primary-btn:hover {
-  color: black;
-  border: 2px solid #964B00;
-  background-color: #D2B48C;
+  color: #321f19;
+  border: 2px solid  #8C6C61;
+  background-color: #EDE2D9;
   font-weight: bold;
   font-size: 20px;
 }
 .highlighted-btn {
-  color:#D2B48C;
+  color:#EDE2D9;
   font-size: 15px;
-  background-color: #80461B;
+  background-color:  #A16242;
   font-weight: bold;
 }
 .highlighted-btn:hover{
   text-decoration-line: underline;
   font-size: 20px;
-  color: black;
+  color: #321f19;
   font-weight: bold;
-  border: 2px solid #964B00;
-  background-color: #D2B48C;
+  border: 2px solid  #A16242;
+  background-color: #EDE2D9;
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

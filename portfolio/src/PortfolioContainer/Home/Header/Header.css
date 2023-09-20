@@ -1,0 +1,89 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    color: #EDE2D9;
+  }
+  .header-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    color: #EDE2D9;
+  }
+  .header-logo {
+    font-size: 55px;
+    font-family:"Special Elite";
+    color:#EDE2D9;
+  }
+  .header-options {
+    display: flex;
+    align-items: center;
+  }
+  .header-option {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    color:#EDE2D9;
+  }
+  .header-hamburger {
+    display: none;
+    color: #EDE2D9;
+  }
+  .header-option-seperator {
+    margin: 0 50px 0 0;
+    color: #EDE2D9;
+  }
+  .selected-header-option {
+    color: #A16242 ;
+  }
+  
+  /*IPAD PRO RESPONSIVENESS*/
+ @media only screen and (max-width: 1110px) {
+    header-parent {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 970px) {
+    .header-hamburger {
+      display: block;
+    }
+    .header-parent {
+      width: 100%;
+      padding: 0 40px;
+      position: relative;
+    }
+    .header-options {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: -100%;
+      transition: all 0.8s ease-out;
+      top: 10px;
+      height: 100vh;
+      width: 100%;
+      justify-content: space-around;
+      background-color:#321f19 ;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+    .header-option-seperator {
+      margin: 0;
+    }
+    .selected-header-option {
+      color: #A16242;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .header-hamburger-bars {
+      font-size: 36px;
+      cursor: pointer;
+      margin: 0px 10px;
+      color: #EDE2D9;
+    }
+    .show-hamburger-options {
+      left: 0;
+      opacity: 1;
+    }
+  }

@@ -1,7 +1,7 @@
-import React from 'react';
-import { TOTAL_SCREENS } from '../utilities/commonutis';
+import React from 'react'
+import { TOTAL_SCREENS } from '../utilities/commonutis'
 
-export default function Container() {
+export default function PortfolioContainer() {
     const mapAllScreens = () =>{
         return(
             TOTAL_SCREENS.map((screen)=>(
@@ -13,7 +13,7 @@ export default function Container() {
     }
 
     return (
-        <div className='main-container'>
+        <div className='portfolio-container'>
             {mapAllScreens()}
         </div>
     )

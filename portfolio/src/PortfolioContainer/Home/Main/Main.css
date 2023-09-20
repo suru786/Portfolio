@@ -10,7 +10,7 @@
 .main-parent{
     display: flex;
     align-items: center;
-    color: aliceblue;
+    color: #EDE2D9;
 }
 .details-name{
     font-size: 24px;
@@ -24,19 +24,19 @@
 }
 .role-details h1{
     font-size: 40px;
-    font-family: "Special Elite" !important;
+    font-family: "Special Elite";
     font-weight: 300;
 }
 .main-text{
-    color:antiquewhite;
+    color:#EDE2D9;
 }
 .highlighted-text{
-    color:burlywood;
+    color:#6B584C;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
 .role-details-sub{
-    font-size: 16px;
+    font-size: 20px;
     margin: 5px 0 0 0;
 }
 
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
+    box-shadow: 0 1px 0px 0px #EDE2D9;
     border-radius: 50%;
     height: 380px;
     width: 380px;
@@ -64,7 +64,7 @@
     transition: 1s ease-out;
   }
   .col .col-icon i {
-    color: white;
+    color: #EDE2D9;
     padding: 8px;
     padding-left: 0px;
   }

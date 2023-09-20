@@ -1,0 +1,118 @@
+.cmain-container {
+    min-height: 100vh;
+    margin: 100px 0 -450px 0;
+  }
+  .central-form {
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 0px 20px -2px #321f19;
+    border-radius: 12px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #321f19;
+  }
+  
+  .central-form h2 {
+    color: #EDE2D9;
+    ;
+    font-family: "Poppins Bold";
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .back-form {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  
+  .back-form .img-back {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .img-back h4 {
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    color: #EDE2D9;
+    font-size: 20px;
+    opacity: 0.5;
+
+  }
+  
+  .back-form .img-back img {
+    width: 100%;
+    opacity: 0.5;
+  }
+  
+  .central-form form {
+    width: auto;
+    box-shadow: 0 0 2px 1px #EDE2D9;
+    display: flex;
+    color: #321f19;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -52px;
+    opacity: 0.9;
+    background-color: #EDE2D9;
+    box-shadow: 0 0px 20px -2px #321f19;
+    border-radius: 12px;
+  }
+  form p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-family: "Josefin Sans";
+  }
+  form label {
+    margin-bottom: 5px;
+    color: #321f19;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  
+  form input,
+  textarea {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: ;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  textarea:focus {
+    border: 2px solid #321f19;
+    background-color: #fff;
+  }
+  form input:focus {
+    border: 2px solid #321f19;
+    background-color: #fff;
+  }
+  form button {
+    margin-top: 15px;
+    padding: 5px;
+    outline: none;
+    width: 900px;
+    color: #EDE2D9;
+    border: 2px solid ;
+    font-size: 12px;
+    border-radius: 19px;
+    background-color: #321f19;
+    font-size: 18px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  form button:hover {
+    background-color: #EDE2D9;
+    transition: all ease 0.5s;
+    border: 2px solid #321f19;
+    color:#321f19;
+  }

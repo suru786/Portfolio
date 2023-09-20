@@ -1,10 +1,10 @@
 import React from "react";
-import Container from "./Container/Container";
+import PortfolioContainer from "./PortfolioContainer/PortfolioContainer";
 import './index.css';
 function App() {
   return (
     <div className="App">
-       <Container/>
+       <PortfolioContainer/>
     </div>
   );
 }

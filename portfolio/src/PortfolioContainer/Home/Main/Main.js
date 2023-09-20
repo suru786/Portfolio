@@ -18,7 +18,7 @@ export default function Main() {
             <a href="https://www.linkedin.com/in/suraiya-parween-805715228/">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/home?lang=en">
               <i class="fa-brands fa-twitter"></i>
             </a>
             </div>
@@ -36,15 +36,15 @@ export default function Main() {
                   loop={Infinity}
                   steps={[
                     "Web Developer ",
-                    1000,
+                    2000,
                     "Passionate Designer ",
-                    1000,
+                    2000,
                     "Coder ",
-                    1000,
+                    2000,
                     "React Developer ",
-                    1000,
+                    2000,
                     "Problem Solver",
-                    1000,
+                    2000,
                   ]}
                 />
               </h1>
