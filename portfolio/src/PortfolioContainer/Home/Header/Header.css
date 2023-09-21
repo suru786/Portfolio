@@ -36,7 +36,7 @@
     color: #EDE2D9;
   }
   .selected-header-option {
-    color: #A16242 ;
+    color: #8C6C61 ;
   }
   
   /*IPAD PRO RESPONSIVENESS*/
@@ -72,7 +72,7 @@
       margin: 0;
     }
     .selected-header-option {
-      color: #A16242;
+      color: #8C6C61;
       font-size: 25px;
       font-weight: bold;
     }

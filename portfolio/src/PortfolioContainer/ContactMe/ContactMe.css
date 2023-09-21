@@ -17,7 +17,7 @@
   .central-form h2 {
     color: #EDE2D9;
     ;
-    font-family: "Poppins Bold";
+    font-family: "Josefin Sans";
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
   }
@@ -79,7 +79,7 @@
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
     outline: none;
-    background-color: ;
+    background-color:white;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     margin-bottom: 22px;
