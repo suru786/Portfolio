@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import Typical from "react-typical";
 
-import imgBack from '../../../src/images/mailz.jpg';
-import load1 from '../../../src/images/load2.gif';
+import imgBack from '../../images/mailz.jpg';
+import load1 from '../../images/load2.gif';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animation from '../../utilities/Animation';

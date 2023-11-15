@@ -83,7 +83,9 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 
-
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
 .fade-in {
   opacity: 0;
   transform: translateY(80px);
