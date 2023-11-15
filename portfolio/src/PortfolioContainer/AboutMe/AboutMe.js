@@ -16,8 +16,8 @@ export default function AboutMe(props) {
       "I am currently pursuing Bachelors's degree in Computer Science and Engineering at National Institute of Technology, Silchar",
     highlights: {
       bullets: [
-        "Full Stack web development",
-        "Interactive Front End as per the design",
+        "Developer",
+        "Interactive Front End ",
         "React Developer",
         "Learner",
         "Problem Solving Skills",
