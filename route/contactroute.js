@@ -13,36 +13,38 @@ router.post("/contact", (req, res) => {
 
   let smtpTransporter = nodemailer.createTransport({
     service: "Gmail",
+    secure: true,
     port: 465,
     auth: {
       user: "suru786parween@gmail.com",
       pass: "yenm qudf wykb rjvu",
     },
   });
+
   let mailOptions = {
     from: data.email,
     to: "suru786parween@gmail.com",
-    subject: `message from ${data.name}`,
+    subject: `Message from ${data.name}`,
     html: `
-
-            <h3>Informations<h3/>
-            <ul>
-            <li>Name: ${data.name}<li/>
-            <li>Email: ${data.email}<li/>
-            </ul>
-            <h3>Message</h3>
-            <p>${data.message}<p/>
-            `,
+      <h3>Informations</h3>
+      <ul>
+        <li>Name: ${data.name}</li>
+        <li>Email: ${data.email}</li>
+      </ul>
+      <h3>Message</h3>
+      <p>${data.message}</p>
+    `,
   };
 
-  smtpTransporter.sendMail(mailOptions, (error) => {
-    try {
-      if (error)
-        return res.status(400).json({ msg: "Please Fill All The Fields!" });
-      res.status(200).json({ msg: "Thank You For Contacting me." });
-    } catch (error) {
-      if (error) return res.status(500).json({ msg: "There is server error" });
+  smtpTransporter.sendMail(mailOptions, (error, response) => {
+    if (error) {
+      console.log(error);
+      return res.json({ msg: "Unable to send the email" });
+    } else {
+      console.log("Email sent successfully");
+      return res.json({ msg: "Email sent successfully" });
     }
   });
 });
+
 module.exports = router;

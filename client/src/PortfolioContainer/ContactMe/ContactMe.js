@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Typical from "react-typical";
-
+import axios from "axios";
+import { toast } from "react-toastify";
 import imgBack from '../../images/mailz.jpg';
 import load1 from '../../images/load2.gif';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
@@ -29,6 +30,34 @@ export default function ContactMe(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
+  console.log(name);
+  const submitForm = async (e) => {
+    e.preventDefault();
+    try {
+      let data = {
+        name,
+        email,
+        message,
+      };
+      setBool(true);
+      const res = await axios.post(`/contact`, data);
+      if (name.length === 0 || email.length === 0 || message.length === 0) {
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
+        setBool(false);
+      } else if (res.status === 200) {
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
+        setBool(false);
+
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   
   return (
     <div className="cmain-container " id={props.id || ""}>
@@ -45,7 +74,7 @@ export default function ContactMe(props) {
             <h4>Send Your Email Here!</h4>
             <img src={imgBack} alt="image not found" />
           </div>
-          <form>
+          <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
