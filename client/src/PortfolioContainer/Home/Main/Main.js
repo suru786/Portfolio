@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import ScrollService from "../../../utilities/ScrollService"
 import './Main.css';
 export default function Main() {
   return (
@@ -55,10 +56,11 @@ export default function Main() {
             </span>
           </div>
           <div className="main-options">
-            <button className="btn primary-btn">
+            <button className="btn primary-btn" 
+            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                 Hire Me
             </button>
-            <a href="https://drive.google.com/file/d/1SYV5KfYJH5sgt9tdgryadV_nPjjxBHuP/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1HPyYn7WKPr8IOZZF8LysJ0AXYWRgEk1g/view?usp=drive_link">
                 <button className="btn highlighted-btn">Resume</button>
             </a>
           </div>

@@ -7,9 +7,10 @@ import "./AboutMe.css";
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
-           Animation.animation.fadeInScreen(props.id);
+    Animation.animation.fadeInScreen(props.id);
   };
-  const fadeInSubscription=ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
     description:
@@ -35,7 +36,7 @@ export default function AboutMe(props) {
     ));
   };
   return (
-    <div className="about-me-container screen-container" id={props.id || ""}>
+    <div className="about-me-container screen-container fade-in" id={props.id || ""}>
       <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Introduction..."} />
         <div className="about-me-card">
@@ -56,7 +57,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="https://drive.google.com/file/d/1SYV5KfYJH5sgt9tdgryadV_nPjjxBHuP/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1HPyYn7WKPr8IOZZF8LysJ0AXYWRgEk1g/view?usp=drive_link">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

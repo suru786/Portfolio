@@ -1,9 +1,9 @@
 .cmain-container {
     min-height: 100vh;
-    margin: 100px 0 -450px 0;
+    margin: 150px 0 -450px 0;
   }
   .central-form {
-    max-width: 1100px;
+    max-width:1000px;
     padding: 10px;
     display: flex;
     box-shadow: 0 0px 20px -2px #321f19;
@@ -115,4 +115,44 @@
     transition: all ease 0.5s;
     border: 2px solid #321f19;
     color:#321f19;
+  }
+  button .load {
+    width: 100%;
+  }
+  
+  button .load img {
+    width: 60px;
+    color: green;
+  }
+  .col i {
+    padding: 7px;
+    color: #fff;
+  }
+  .col i:hover {
+    transform: scale(1.5);
+  }
+  
+  @media screen and (min-width: 940px) {
+    .back-form {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  
+    .img-back {
+      flex: 1;
+      align-self: center;
+      margin-right: 20px;
+    }
+  
+    form {
+      flex: 0.9;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .central-form h2 {
+      font-size: 16px;
+    }
   }
