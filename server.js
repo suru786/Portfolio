@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+
 app.use("/", contactRoute);
 
 if (process.env.NODE_ENV === "production") {
@@ -18,5 +19,5 @@ if (process.env.NODE_ENV === "production") {
   );
 }
 
-const port = process.env.PORT || 5000;
-app.listen(port, console.log(`server listening to port 5000 only`));
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Server started on port ${port}`));
