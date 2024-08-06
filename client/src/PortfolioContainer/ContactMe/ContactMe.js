@@ -15,6 +15,7 @@ export default function ContactMe(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animation.animation.fadeInScreen(props.id);
   };
+  // eslint-disable-next-line no-unused-vars
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
