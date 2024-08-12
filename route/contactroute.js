@@ -1,6 +1,9 @@
 const router = require("express").Router();
 const nodemailer = require("nodemailer");
 
+const EMAIL = process.env.EMAIL;
+const PASS = process.env.PASS;
+
 router.post("/contact", (req, res) => {
   let data = req.body;
   if (
@@ -16,14 +19,14 @@ router.post("/contact", (req, res) => {
     secure: true,
     port: 465,
     auth: {
-      user: "suru786parween@gmail.com",
-      pass: "yenm qudf wykb rjvu",
+      user: EMAIL,
+      pass: PASS,
     },
   });
 
   let mailOptions = {
     from: data.email,
-    to: "suru786parween@gmail.com",
+    to: EMAIL,
     subject: `Message from ${data.name}`,
     html: `
       <h3>Informations</h3>
